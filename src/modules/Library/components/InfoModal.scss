@@ -1,0 +1,97 @@
+.info-modal {
+  &__container {
+    font-family: 'Poppins';
+  }
+
+  .modal-header {
+    border-bottom: none;
+  }
+
+  &__ratings {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #081f32;
+    margin: 0px 0px 20px 0px;
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 18px;
+    color: #081f32;
+  }
+
+  &__details {
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+    display: flex;
+    margin: 20px 0px;
+
+    &-lessons {
+      margin-right: 10px;
+
+      img {
+        margin-right: 5px;
+      }
+    }
+
+    &-review {
+      img {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  &__channels {
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+    margin-bottom: 20px;
+
+    &-icons {
+      display: flex;
+      margin-top: 10px;
+    }
+  }
+
+  &__preview-btn {
+    button {
+      background: #4d8dff !important;
+      border-radius: 30px;
+      border: none;
+      width: 100%;
+      color: white;
+    }
+  }
+
+  &__wishlist-button {
+    font-size: 14px;
+    line-height: 21px;
+    color: #979797;
+    margin: 20px 0px 20px 5px;
+
+    i {
+      margin-right: 5px;
+    }
+
+    .icon-active {
+      background: #ffad69;
+    }
+  }
+
+  &__author {
+    font-size: 11px;
+    line-height: 20px;
+    letter-spacing: -0.05px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+
+    img {
+      height: 50px;
+      width: 50px;
+    }
+  }
+}

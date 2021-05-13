@@ -1,0 +1,130 @@
+:root {
+  --white: #fff;
+  --whitesmoke: whitesmoke;
+
+  --black: black;
+  --black-light: #212529;
+  --black-faint: #3a3b3f;
+
+  --navy-dark: #0b1d2e;
+  --navy: #334d6e;
+  --navy-2: #0d2481;
+  --navy-light: #1e2a4c;
+  --navy-light-2: #20294e;
+  --navy-lighter: #3f5c74;
+  --navy-lighter-2: #3f51b5;
+  --navy-lighter-3: #51516b;
+  --navy-lighter-4: #475f7b;
+  --navy-lighter-faint: #eaeff6;
+
+  --grey-dark: #515151;
+  --grey-dark-2: #4d4651;
+  --grey-dark-3: #4c5862;
+  --grey-dark-4: #635d67;
+  --grey-dark-5: #4f4f4f;
+  --grey-dark-6: #43434a;
+  --grey: grey;
+  --grey-light: #a4aeb4;
+  --grey-light-2: #d5d9dc;
+  --grey-light-3: #979797;
+  --grey-light-4: #79828e;
+  --grey-lighter: #c4c4c4;
+  --grey-faint: #dadada;
+  --grey-faint-2: #e7e9f0;
+  --grey-faint-3: #f6f8f9;
+  --grey-faint-4: #dddddd;
+  --grey-faint-5: #e5e5e5;
+  --grey-faint-6: #f9f9f9;
+
+  --blue-google: #2696e8;
+  --blue-light: #5395c1;
+  --blue-light-2: #0baaff;
+  --blue-light-3: #419fd9;
+  --blue-dark: #1665d8;
+  --blue-dark-2: #4d6af1;
+  --blue-dark-3: #304ffe;
+  --blue-faint: #c6e4ff;
+  --blue-faint-2: #afdfff;
+  --blue-faint-3: #e6f5ff;
+  --blue-faint-4: #f0f0fc;
+
+  --red-dark: #a01e29;
+  --red: red;
+  --red-light: #f7685b;
+  --red-light-2: #ff4e4a;
+  --red-light-3: #eb5858;
+  --red-light-faint: #ff9686;
+
+  --orange: #ffc107;
+  --orange-2: #f46a54;
+  --orange-light: #e9a643;
+  --orange-lighter: #f7d154;
+  --orange-lighter-1: #ffad69;
+
+  --green: #2ed47a;
+  --green-whatsapp: #24c875;
+  --green-dark: darkgreen;
+  --green-dark-2: #004e45;
+  --green-dark-3: #005e54;
+  --green-dark-4: #008a7c;
+  --green-faint: #effdde;
+  --green-faint-2: #e1ffc7;
+
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #5395c1;
+  --secondary: #e9a643;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, 'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace;
+}
+
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+$white: #fff;
+$gray: #6c757d;
+$gray-dark: #343a40;
+$primary: #5395c1;
+$secondary: #e9a643;
+$secondary-faint: #fff4d4;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #343a40;
+$black: #23242a;
+$navy: #334d6e;
+$navy-dark: #001a49;

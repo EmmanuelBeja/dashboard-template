@@ -1,0 +1,13 @@
+.card-tips {
+  color: #4d4651;
+  height: fit-content;
+  background: #ffe9c6;
+
+  .card-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #ffe9c6;
+  }
+}

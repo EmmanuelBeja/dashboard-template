@@ -1,0 +1,160 @@
+@import '../../../assets/css/themes/light-colors.scss';
+
+.modal-body {
+  padding: 0px !important;
+
+  .user-cv {
+    &__container {
+      font-family: 'Rubik';
+    }
+
+    &-left {
+      padding: 60px 20px;
+
+      &__header {
+      }
+
+      &__form {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        &-buttons {
+          display: flex;
+          justify-content: flex-end;
+          margin-top: 10px;
+        }
+      }
+
+      .text-center {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    &-right {
+      &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f9f9f9;
+      }
+
+      &__body {
+        margin-top: 10px;
+      }
+
+      &__svg {
+        width: inherit;
+      }
+    }
+  }
+}
+
+// image css
+.image-upload_container {
+  width: 100%;
+  height: 190px;
+  border-radius: 4px;
+  text-align: center;
+  padding-bottom: 10px;
+  border: 1px dotted #9b9b9b;
+
+  .upload-icon {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    font-size: 35px;
+    color: $blue;
+  }
+
+  .drag-photo_text {
+    padding-top: 10px;
+    padding-bottom: 8.4px;
+    opacity: 0.6;
+    font-size: 14px;
+    color: #303030;
+  }
+
+  .or_text {
+    opacity: 0.6;
+    font-size: 14px;
+    color: #9b9b9b;
+  }
+
+  .upload-image_button {
+    margin-top: 7.2px;
+    width: 139px;
+    height: 34.7px;
+    border-radius: 4px !important;
+    background-color: $white !important;
+    color: $blue !important;
+    border: 1px solid $blue !important;
+  }
+
+  .image-input {
+    opacity: 0;
+    display: block;
+    margin: auto;
+    width: 139px;
+    height: 34.7px;
+    margin-top: -32px;
+  }
+}
+
+.active-upload {
+  background-color: #e1edf9;
+}
+
+.preview_file {
+  width: 100%;
+}
+
+.error-upload {
+  background-color: #fddede;
+}
+
+// progres card css
+.progress-card {
+  &__container {
+    margin-bottom: 10px;
+  }
+
+  &__file-icon {
+    font-size: 40px;
+    color: $blue;
+  }
+
+  &__content {
+    overflow-wrap: anywhere;
+
+    &-file-name {
+      font-weight: 500;
+      font-size: large;
+
+      i {
+        color: $green;
+      }
+    }
+
+    &-file-size {
+      color: $gray;
+    }
+  }
+
+  &__space-between {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__flex-end {
+    display: flex;
+    justify-content: flex-end;
+    color: $gray;
+  }
+
+  &__close-icon {
+    color: $gray;
+  }
+}

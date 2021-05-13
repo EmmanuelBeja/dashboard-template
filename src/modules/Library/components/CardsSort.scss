@@ -1,0 +1,61 @@
+.cards-sort {
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Poppins';
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.05px;
+  color: #979797;
+  margin: 20px 0px;
+
+  img {
+    height: 15px;
+  }
+
+  &__search {
+    margin-right: 15px;
+    cursor: pointer;
+  }
+
+  &__status {
+    &:hover {
+      color: #4d8dff;
+    }
+    margin-right: 15px;
+    display: flex;
+    cursor: pointer;
+
+    &-icons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 22px;
+      font-size: 10px;
+      margin-left: 5px;
+    }
+  }
+
+  &__list {
+    &:hover {
+      color: #4d8dff;
+    }
+    cursor: pointer;
+    margin-right: 15px;
+
+    i {
+      margin-right: 5px;
+    }
+  }
+
+  &__grid {
+    &:hover {
+      color: #4d8dff;
+    }
+    cursor: pointer;
+
+    i {
+      margin-right: 5px;
+    }
+  }
+}

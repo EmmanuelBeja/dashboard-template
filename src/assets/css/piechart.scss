@@ -1,0 +1,37 @@
+:root {
+  --segment-success-color: #24c875;
+  --segment-primary-color: #4d8dff;
+  --segment-warning-color: #f7d154;
+}
+
+.pie {
+  position: relative;
+  display: inline-block;
+  width: 3.75em;
+  height: 3.75em;
+  border-radius: 50%;
+  background-color: var(--segment-success-color);
+  background-image: conic-gradient(
+    var(--segment-success-color) calc(3.6deg * var(--segmentSuccess, 100)),
+    var(--segment-primary-color) 0deg calc(3.6deg * var(--segmentPrimary, 100)),
+    var(--segment-warning-color) 0deg calc(3.6deg * var(--segmentWarning, 100))
+  );
+  background-position: 50% 50%;
+  background-size: 150%; /* oversize bg image to prevent "underdraw" */
+  background-clip: border-box;
+}
+
+.pie--disc::before {
+  content: '';
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  right: 0.5em;
+  bottom: 0.5em;
+  border-radius: 50%;
+  background: var(--white);
+}
+
+.pie {
+  font-size: 145%;
+}

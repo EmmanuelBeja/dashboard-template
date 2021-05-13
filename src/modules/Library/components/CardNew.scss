@@ -1,0 +1,30 @@
+@import '../../../assets/css/themes/light-colors.scss';
+
+.card-new {
+  height: 265px;
+  margin-bottom: 15px;
+  cursor: pointer;
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, #d2ebf7, #d2ebf7), #bcd1ff;
+
+    .card-title {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 20px;
+      letter-spacing: -0.05px;
+      color: $black;
+    }
+
+    .card-img-top {
+      height: 60px;
+      width: 60px;
+    }
+  }
+}

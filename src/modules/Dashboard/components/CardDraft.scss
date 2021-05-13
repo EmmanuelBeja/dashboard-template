@@ -1,0 +1,23 @@
+@import '../../../assets/css/themes/light-colors.scss';
+
+.dashboard-section__bottom-bottom-cards__draft-card {
+  font-family: 'Poppins';
+  color: var(--navy-lighter-4);
+
+  .card-title {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+  }
+
+  .card-text {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(218, 218, 218, 0.48);
+  }
+}

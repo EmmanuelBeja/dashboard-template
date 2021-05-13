@@ -1,0 +1,89 @@
+.modal-body {
+  padding: 0px !important;
+
+  .user-welcome {
+    &__container {
+      font-family: 'Rubik';
+    }
+
+    &-left {
+      padding: 60px 20px;
+
+      &__form {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .btn-primary {
+          // width: 100%;
+          width: 400px !important;
+          display: flex !important;
+          justify-content: center !important;
+        }
+      }
+
+      .text-center {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    &-right {
+      padding: 60px 20px;
+      background: #f9f9f9;
+      border-radius: 19px;
+
+      &__title {
+        font-size: 16px;
+        line-height: 19px;
+        color: #515151;
+        margin-bottom: 20px;
+      }
+
+      &__logo {
+        &:nth-child(3) {
+          margin-top: 40px;
+        }
+
+        &:nth-child(5),
+        &:nth-child(7),
+        &:nth-child(9) {
+          margin-top: 20px;
+        }
+
+        .card {
+          &-body {
+            padding: 5px;
+
+            img {
+              height: 70px;
+              object-fit: contain;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .other-auth-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+    }
+
+    hr {
+      width: 100%;
+    }
+
+    span {
+      width: inherit;
+      padding: 0px 2px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

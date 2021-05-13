@@ -1,0 +1,15 @@
+.progress-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    width: 100%;
+    margin: 30px;
+  }
+
+  img {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}

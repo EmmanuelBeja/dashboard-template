@@ -1,0 +1,274 @@
+/* ----------------- */
+/* MAIN APP ELEMENTS */
+/* ----------------- */
+#telegram {
+  overflow-x: scroll;
+}
+
+.telegramPanel {
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  overflow: hidden;
+  font-family: 'Open Sans', 'Roboto', 'Ubuntu', sans-serif;
+  font-size: 16px;
+
+  float: left;
+  height: 100%;
+  background: var(--grey-light-3);
+
+  .topBar {
+    position: relative;
+    width: 100%;
+    height: 75px;
+    background: var(--blue-light);
+  }
+
+  .active,
+  .active:hover {
+    color: var(--white);
+    background: var(--blue-light-3);
+  }
+
+  .status {
+    width: 60px;
+    height: 100%;
+    position: relative;
+    float: right;
+  }
+
+  .status .fixed {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: none;
+  }
+
+  div[class~='normal'] > .fixed {
+    display: none;
+  }
+
+  div[class~='normal'] > .count {
+    right: 10px;
+    bottom: 7px;
+  }
+
+  div[class~='onTop'] > .fixed {
+    display: block;
+    width: 24px;
+    height: 24px;
+    fill: var(--white);
+  }
+
+  div[class~='onTop'] > .count {
+    right: 49px;
+    bottom: 7px;
+    background: var(--white);
+    color: var(--blue-light-3);
+  }
+
+  .status .count {
+    position: absolute;
+    right: 49px;
+    bottom: 7px;
+    width: auto;
+    height: auto;
+    padding: 7px;
+    border-radius: 20px;
+    color: var(--black-light);
+    background: rgba(0, 0, 0, 0.12);
+  }
+
+  .status .date {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    font-size: 12px;
+  }
+
+  .status .read {
+    position: absolute;
+    right: 53px;
+    top: 6px;
+  }
+
+  .leftSide {
+    display: inline-block;
+    clear: none;
+    float: left;
+  }
+
+  .leftSide .chatName {
+    float: left;
+    margin-left: 30px;
+    margin-top: 13px;
+    color: var(--white);
+    font-weight: 600;
+    cursor: default;
+  }
+
+  .chatName > span {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--white);
+    margin-left: 10px;
+  }
+
+  .rightSide {
+    display: inline-block;
+    clear: none;
+    float: right;
+    margin-right: 20px;
+  }
+
+  .tbButton,
+  .otherTools .toolButtons {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    background: var(--blue-light);
+    color: var(--white);
+    border-radius: 100%;
+    border: none;
+  }
+
+  /* THE CONVERSATION HISTORY CSS */
+  .convHistory {
+    float: left;
+    position: relative;
+    width: 100%;
+    background: var(--black-faint);
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 530px;
+  }
+
+  .userBg {
+    background: url(https://s-media-cache-ak0.pinimg.com/originals/51/ed/c0/51edc046eb80046ee4755ee71d0f19ca.jpg)
+      100% center;
+  }
+
+  .msg {
+    position: relative;
+    width: auto;
+    min-width: 100px;
+    max-width: 45%;
+    height: auto;
+    padding: 25px;
+    padding-bottom: 35px;
+    margin: 20px 15px;
+    margin-bottom: 0px;
+    background: var(--white);
+    border-radius: 7px;
+    clear: both;
+  }
+
+  .msg:nth-last-child(1) {
+    margin-bottom: 20px;
+  }
+
+  .msg .timestamp {
+    display: block;
+    position: absolute;
+    right: 10px;
+    bottom: 6px;
+    color: var(--grey-light);
+    user-select: none;
+  }
+
+  .messageReceived {
+    float: left;
+    background: var(--white);
+    border: none;
+  }
+
+  .messageSent {
+    float: right;
+    background: var(--green-faint);
+  }
+
+  .messageSent > .timestamp,
+  .messageSent > .readStatus {
+    bottom: 10px;
+    right: 40px;
+    color: var(--green-dark);
+    user-select: none;
+  }
+
+  .messageSent > .readStatus {
+    position: absolute;
+    bottom: 10px;
+    right: 12px;
+  }
+
+  /* THE REPLY BAR CSS */
+
+  .replyBar {
+    width: 100%;
+    height: 70px;
+    float: left;
+    background: var(--white);
+  }
+
+  .replyBar .attach {
+    width: 70px;
+    height: 70px;
+    color: #777;
+    background: var(--white);
+    float: left;
+    border: none;
+  }
+
+  .replyBar .attach:hover {
+    color: #555;
+    background: #ddd;
+  }
+
+  .replyBar .d45 {
+    transform: rotate(45deg);
+    font-size: 32px;
+  }
+
+  .replyBar .replyMessage {
+    width: calc(100% - 220px);
+    float: left;
+    height: 70px;
+    padding: 0px 8px;
+    font-size: 16px;
+    border: none;
+  }
+
+  .replyBar .otherTools {
+    float: right;
+    width: 120px;
+    height: 70px;
+  }
+
+  /* CSS FOR THE EMOJI IMAGES, JUST SOME */
+
+  #smileface {
+    background-image: url(https://emojipedia-us.s3.amazonaws.com/thumbs/120/apple/96/grinning-face_1f600.png);
+  }
+
+  #grinningface {
+    background-image: url(https://emojipedia-us.s3.amazonaws.com/thumbs/120/apple/96/grinning-face-with-smiling-eyes_1f601.png);
+  }
+
+  #tearjoyface {
+    background-image: url(https://emojipedia-us.s3.amazonaws.com/thumbs/120/apple/96/face-with-tears-of-joy_1f602.png);
+  }
+
+  #rofl {
+    background-image: url(https://emojipedia-us.s3.amazonaws.com/thumbs/120/apple/96/rolling-on-the-floor-laughing_1f923.png);
+  }
+
+  #somface {
+    background-image: url(https://emojipedia-us.s3.amazonaws.com/thumbs/120/apple/96/smiling-face-with-open-mouth_1f603.png);
+  }
+
+  #swfface {
+    background-image: url(https://emojipedia-us.s3.amazonaws.com/thumbs/120/apple/96/smiling-face-with-open-mouth-and-smiling-eyes_1f604.png);
+  }
+}

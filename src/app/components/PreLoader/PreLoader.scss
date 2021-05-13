@@ -1,0 +1,28 @@
+.clear {
+  clear: both;
+}
+
+.bar {
+  float: left;
+  width: 15px;
+  height: 6px;
+  border-radius: 2px;
+  background-color: #06aeef;
+}
+
+.load-10 .bar {
+  animation: loading 1s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
+}
+
+@keyframes loading {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(40px, 0);
+    background-color: #f2e105;
+    width: 5px;
+  }
+}

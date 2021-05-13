@@ -1,0 +1,55 @@
+.modal-body {
+  padding: 0px !important;
+
+  .user-account-setup {
+    &__container {
+      font-family: 'Rubik';
+    }
+
+    &-left {
+      padding: 60px 20px;
+
+      &__header {
+      }
+
+      &__form {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        &-buttons {
+          display: flex;
+          justify-content: flex-end;
+          margin-top: 10px;
+        }
+      }
+
+      .text-center {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    &-right {
+      width: 100%;
+      position: relative;
+
+      &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f9f9f9;
+      }
+
+      &__body {
+        margin-top: 10px;
+      }
+
+      &__svg {
+        width: inherit;
+      }
+    }
+  }
+}

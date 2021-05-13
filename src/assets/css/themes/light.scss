@@ -1,0 +1,232 @@
+// overide bootstrap colors and add custom
+@import './light-colors.scss';
+@import '../../fonts/Fonts.scss';
+@import '../tooltip.scss';
+@import '../tree-diagram.scss';
+@import '../feature-phone.scss';
+@import '../messenger.scss';
+@import '../piechart.scss';
+@import '../smart-phone.scss';
+@import '../telegram.scss';
+@import '../whatsapp.scss';
+@import '../wedge-arrow-nav.scss';
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+$theme-colors: (
+  'primary': $primary,
+  'secondary': $secondary,
+);
+
+button {
+  border-radius: 68px !important;
+}
+
+.btn-secondary {
+  color: $white !important;
+  font-size: 10px !important;
+
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  &:active {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+.btn-primary {
+  font-size: 10px !important;
+
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  &:active {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+.btn-dark {
+  background-color: #20294e !important;
+  border-color: #20294e !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-outline-dark {
+  color: #20294e !important;
+  border-color: #20294e !important;
+}
+
+.btn-navy {
+  background: var(--navy) !important;
+  border-radius: 24px;
+  padding: 5px 15px;
+  color: var(--white) !important;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid var(--navy) !important;
+  display: flex !important;
+  align-items: center;
+
+  &:hover {
+    background: var(--navy) !important;
+    color: var(--white) !important;
+    border: 1px solid var(--navy) !important;
+  }
+}
+
+.btn-navy__outline {
+  background: var(--white) !important;
+  border-radius: 24px;
+  padding: 5px 15px;
+  color: var(--navy) !important;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid var(--navy) !important;
+  display: flex !important;
+  align-items: center;
+
+  &:hover {
+    color: var(--white) !important;
+    background: var(--navy) !important;
+  }
+}
+
+.btn-plain__active {
+  font-family: 'Poppins';
+  border: none !important;
+  border-radius: 4px;
+  background: rgba(98, 2, 238, 0.0001) !important;
+  padding: 5px 10px;
+  color: var(--blue-dark) !important;
+  font-size: 12px;
+  text-align: center;
+  display: flex !important;
+  align-items: center;
+
+  &:hover {
+    background: rgba(98, 2, 238, 0.0001) !important;
+    color: var(--blue-dark) !important;
+    border: none;
+  }
+}
+
+.btn-plain__inactive {
+  border: none !important;
+  border-radius: 4px;
+  background: rgba(98, 2, 238, 0.0001) !important;
+  padding: 5px 10px;
+  color: var(--navy-lighter-4) !important;
+  font-size: 12px;
+  text-align: center;
+  display: flex !important;
+  align-items: center;
+
+  &:hover {
+    background: rgba(98, 2, 238, 0.0001) !important;
+    color: var(--navy-lighter-4) !important;
+    border: none !important;
+  }
+}
+
+.btn-plain__outline {
+  border: 1px solid;
+  border-radius: 4px;
+  background: rgba(98, 2, 238, 0.0001) !important;
+  padding: 5px 10px;
+  font-size: 12px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    background: rgba(98, 2, 238, 0.0001) !important;
+  }
+}
+
+.btn-blue__light {
+  background: var(--blue-light) !important;
+  border: 1px solid var(--blue-light) !important;
+  color: var(--white) !important;
+  border-radius: 4px !important;
+  display: flex !important;
+  align-items: center;
+
+  &:hover {
+    background: var(--blue-light) !important;
+    border: 1px solid var(--blue-light) !important;
+    color: var(--white) !important;
+  }
+}
+
+.btn-with-icon {
+  display: flex !important;
+  align-items: center;
+
+  img,
+  i {
+    margin-left: 10px;
+  }
+}
+
+.btn-ellipsis {
+  border-radius: 50% !important;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-blue {
+  height: 40px;
+  width: 40px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  border: none !important;
+  background-color: $blue !important;
+  color: $white !important;
+}
+
+.btn-none {
+  border: none !important;
+  color: inherit;
+  background: none !important;
+}
+
+.btn-semi {
+  border-radius: 24px !important;
+  width: fit-content !important;
+}
+
+// panel
+.panel-group {
+  width: 100%;
+}
+
+// Table
+.react-bootstrap-table {
+  table {
+    table-layout: auto !important;
+  }
+
+  &-pagination {
+    &-list {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+@import '~bootstrap/scss/bootstrap';

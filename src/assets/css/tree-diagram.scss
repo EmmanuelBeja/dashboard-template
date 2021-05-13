@@ -1,0 +1,275 @@
+.border-none {
+  border: none !important;
+}
+
+// tree diagrams for the menu page and sequence page
+.tree {
+  &-menu {
+    overflow-x: scroll;
+    height: 80vh;
+
+    &__card {
+      &-root {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background: #f6fbff;
+        border: 1px solid var(--blue-light-3);
+        border-radius: 3px;
+        font-family: 'Montserrat';
+        font-size: 12px;
+        width: 250px;
+        margin: auto;
+        padding: 5px;
+
+        .tree-input {
+          width: 100%;
+
+          input {
+            background-color: transparent;
+          }
+        }
+
+        .tree-list__title {
+          margin-top: 10px;
+        }
+
+        .tree-list__item {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          position: relative;
+          height: 20px;
+          background: var(--grey-faint-2);
+          border-radius: 1px;
+          padding: 1px 5px;
+          margin: 2px 0px;
+          width: 100%;
+
+          .dropdown {
+            button {
+              background: transparent !important;
+              border: none !important;
+
+              .material-icons {
+                color: var(--blue-light-3);
+                font-size: 15px;
+              }
+            }
+
+            &-menu {
+              padding: 5px;
+            }
+          }
+        }
+      }
+
+      &-children {
+        border-radius: 5px;
+
+        .panel-default {
+          background-color: transparent;
+          border: none;
+          z-index: 2;
+
+          .panel-heading {
+            background: rgba(215, 234, 238, 0.7101);
+            padding: 0 5px;
+            font-family: 'Poppins';
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.02em;
+            color: #475f7b;
+
+            .panel-title {
+              display: flex;
+              justify-content: space-between;
+
+              button {
+                background-color: transparent;
+                border: none;
+                color: $black !important;
+
+                &:active {
+                  background-color: transparent !important;
+                  border: none;
+                }
+              }
+            }
+          }
+
+          .panel-collapse {
+            position: absolute !important;
+            width: 100% !important;
+
+            .panel-body {
+              width: 280px;
+              align-items: flex-start;
+
+              &__header {
+                background: rgba(215, 234, 238, 0.7101);
+                border-radius: 5px;
+                padding: 5px 10px;
+              }
+
+              &__content {
+                &-row {
+                  background: rgba(243, 243, 243, 0.36);
+                  backdrop-filter: blur(4px);
+                  margin: 10px 0px;
+                  padding: 15px 10px;
+                  text-align: left;
+
+                  &:hover {
+                    border-left: 2px solid #afdfff;
+                  }
+                }
+
+                &-bottom {
+                  background: #e9a643;
+                  backdrop-filter: blur(4px);
+                  text-align: initial;
+                  padding: 5px 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-sequence {
+    display: flex;
+    overflow-x: scroll;
+    height: 80vh;
+
+    &__card {
+      position: initial;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: var(--grey-faint-3);
+      border: 1px solid var(--blue-light-3);
+      box-sizing: border-box;
+      border-radius: 3px;
+      letter-spacing: 0.2px;
+      color: var(--black);
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 22px;
+      text-align: initial;
+      min-width: 200px;
+      z-index: 1;
+
+      .tree-list__title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+        color: var(--blue-light-3);
+        width: 95%;
+        margin-left: 2%;
+      }
+
+      .tree-list__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        height: 20px;
+        background: var(--grey-faint-2);
+        border-radius: 1px;
+        padding: 1px 5px;
+        margin: 5px 0px;
+        width: 95%;
+        margin-left: 2%;
+
+        .dropdown {
+          button {
+            background: transparent !important;
+            border: none !important;
+
+            .material-icons {
+              color: var(--blue-light-3);
+              font-size: 15px;
+            }
+          }
+
+          &-menu {
+            padding: 5px;
+          }
+        }
+      }
+
+      .panel-default {
+        background-color: transparent;
+        border: none;
+        z-index: 2;
+
+        .panel-heading {
+          background: #5395c1 !important;
+          color: $white;
+
+          .panel-title {
+            display: flex;
+            justify-content: space-between;
+
+            button {
+              background-color: transparent;
+              border: none;
+              color: $white !important;
+
+              &:active {
+                background-color: transparent !important;
+                border: none;
+              }
+            }
+          }
+        }
+
+        .panel-collapse {
+          margin-top: -35px !important;
+          margin-left: 105% !important;
+          position: absolute !important;
+          width: 100% !important;
+
+          .panel-body {
+            width: 280px;
+            align-items: flex-start;
+
+            &__header {
+              background: rgba(215, 234, 238, 0.7101);
+              border-radius: 5px;
+              padding: 5px 10px;
+            }
+
+            &__content {
+              &-row {
+                background: rgba(243, 243, 243, 0.36);
+                backdrop-filter: blur(4px);
+                margin: 10px 0px;
+                padding: 15px 10px;
+
+                &:hover {
+                  border-left: 2px solid #afdfff;
+                }
+              }
+
+              &-bottom {
+                background: #e9a643;
+                backdrop-filter: blur(4px);
+                text-align: initial;
+                padding: 5px 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
